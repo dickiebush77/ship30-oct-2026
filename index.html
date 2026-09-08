@@ -88,6 +88,58 @@ summary{font-weight:600;font-size:20px;line-height:1.5}details{padding:24px 0}de
 }
 
 @media(min-width:701px){.hero .inner,.hero .hero-copy{max-width:1224px;width:100%}.hero h1{max-width:none;white-space:nowrap;font-size:clamp(36px,5.6vw,76px)}}
+
+/* Larger hero with a separate cohort eyebrow. */
+.hero .hero-copy .fold-cohort{font-size:16px;font-style:normal;font-weight:700;line-height:1.4;margin:0 auto 12px;color:var(--navy);letter-spacing:.03em}
+.hero .hero-copy .fold-audience{font-size:23px;max-width:840px}
+.hero .hero-copy .fold-format{font-size:24px;line-height:1.4}
+.hero .hero-copy .fold-outcome{font-size:21px;line-height:1.5;max-width:850px}
+.hero .hero-copy .fold-dates{font-size:18px;line-height:1.6}
+@media(min-width:701px){.hero h1{font-size:clamp(40px,6vw,84px)}}
+@media(max-width:700px){
+.hero .hero-copy .fold-cohort{font-size:14px;margin-bottom:10px}
+.hero .hero-copy .fold-audience{font-size:21px}
+.hero .hero-copy .fold-format{font-size:20px}
+.hero .hero-copy .fold-outcome{font-size:18px}
+.hero .hero-copy .fold-dates{font-size:16px}
+}
+
+.hero .hero-copy .fold-cohort{display:table;width:auto;max-width:100%;border:1px solid var(--navy);padding:10px 18px;margin:0 auto 16px;letter-spacing:0}
+
+.hero .hero-copy .fold-cohort{line-height:1.6}.hero .fold-cohort span{font-weight:400;font-size:.95em}
+
+/* Compact mobile event box: exactly three lines. */
+@media(max-width:700px){
+ .hero{padding-top:0!important}
+ .hero .hero-copy .fold-cohort{width:100%;padding:8px 4px;margin-top:0;font-size:clamp(10px,2.8vw,14px);line-height:1.65;white-space:nowrap}
+ .hero .fold-cohort span{font-size:inherit}
+}
+
+/* Remove auto vertical centering above the event box. */
+.hero{padding-top:0!important;align-items:flex-start}
+.hero .inner{margin-top:0;margin-bottom:0}
+.hero .hero-copy{padding-top:0;margin-top:0}
+.hero .hero-copy .fold-cohort{margin-top:0}
+
+/* Soft event notice. */
+.hero .hero-copy .fold-cohort{
+ background:#F0EFE9;
+ border:1px solid #CDD0D0;
+ border-radius:5px;
+ padding:12px 20px;
+ color:var(--navy);
+ font-weight:700;
+ line-height:1.7;
+}
+.hero .hero-copy .fold-cohort span{font-size:.92em;font-weight:400;color:var(--navy)}
+@media(max-width:700px){
+ .hero .hero-copy .fold-cohort{padding:10px 6px;font-size:clamp(10px,2.8vw,14px);white-space:nowrap}
+}
+
+header{border-bottom:0}
+
+.event-mobile-break{display:none}
+@media(max-width:700px){.event-mobile-break{display:initial}.event-desktop-divider{display:none}}
 /* Bayu asset and component integration, using Paper & Night Sea colors. */
 @font-face{font-family:'Plus Jakarta Sans';src:url('/landing-assets/fonts/PlusJakartaSans-VariableFont_wght.ttf');font-weight:200 800;font-style:normal;font-display:swap}
 @font-face{font-family:'Plus Jakarta Sans';src:url('/landing-assets/fonts/PlusJakartaSans-Italic-VariableFont_wght.ttf');font-weight:200 800;font-style:italic;font-display:swap}
@@ -192,6 +244,36 @@ section:not(.hero){padding:44px 20px}
 /* Tighter final offer recap */
 .enrollment-shell{max-width:800px}
 .offer-intro{font-size:22px;margin-top:-12px;margin-bottom:32px}
+
+/* Compact scan-first sections. */
+.quiz .inner{max-width:1120px;background:transparent;border:0;padding:0}
+.quiz ul{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.quiz li{background:#F0EFE9;border:1px solid #B9BDC3;padding:24px;margin:0;font-size:16px;line-height:1.5}
+.quiz li strong{font-size:22px;line-height:1.2;margin-bottom:18px}
+.quiz h3{border:0;padding-top:24px;font-size:23px}
+.obstacles ul{grid-template-columns:1fr 1fr;gap:0 30px;counter-reset:problem;margin-top:32px}
+.obstacles li{display:flex;align-items:center;gap:18px;font-size:21px;padding:16px 0}
+.obstacles li::before{counter-increment:problem;content:counter(problem,decimal-leading-zero);font-size:14px;color:#777E89;min-width:24px}
+.offer li{padding:22px 28px;gap:28px;grid-template-columns:1.4fr .6fr;margin:12px 0}
+.offer .visual-slot{padding:12px}
+.offer .slot-window{height:64px;margin:8px 0}
+.offer .visual-slot strong{font-size:14px}.offer .visual-slot p{font-size:12px;margin-top:4px}
+.offer-copy{font-size:20px}
+.bonus-module{padding:22px 0;margin-top:12px;grid-template-columns:1.4fr .6fr;gap:28px}
+.bonus-module .visual-slot{padding:12px}
+.bonus-module .slot-window{height:64px;margin:8px 0}
+.bonus-module .visual-slot strong{font-size:14px}.bonus-module .visual-slot p{font-size:12px}
+.bonus-module h3{margin-bottom:14px}
+.bonus-description{padding:0;border:0}
+.bonus-description summary{font-size:16px;font-weight:400;text-decoration:underline;padding-right:24px}
+.bonus-description[open] summary{margin-bottom:18px}
+.bonus-description p{font-size:16px}
+@media(max-width:700px){
+.quiz ul{grid-template-columns:1fr}.quiz li{padding:22px}.quiz li strong{font-size:21px}
+.obstacles ul{gap:0 16px}.obstacles li{font-size:17px;gap:10px;align-items:baseline}
+.offer li,.bonus-module{gap:18px}.offer li{padding:22px}
+.offer .slot-window,.bonus-module .slot-window{height:44px}
+}
 .modern-system{max-width:1200px;margin:60px auto;background:#F0EFE9;border:1px solid #B9BDC3;padding:56px 48px}
 .modern-intro>h2{font-size:clamp(44px,5.5vw,72px);line-height:1.08;max-width:940px;margin:0 0 36px}
 .era-label{font:italic 28px/1.3 Georgia,serif;color:var(--navy)}
@@ -256,11 +338,11 @@ h1,h2,h3,h4,p,li,a,strong,summary,small,span,
 }
 </style><script defer="defer" src="https://static.samcart.com/checkouts/sc-slide.js"></script></head><body><a class="skip" href="#main">Skip to content</a><div class="preview">October 2026 · Design preview</div><header><a href="#" class="wordmark">Ship 30 for 30</a><nav aria-label="Page navigation"><a href="#curriculum">Curriculum</a><a href="#faq">FAQs</a></nav></header><main id="main"><section class="hero" id="section-0"><div class="inner">
 <div class="hero-copy">
+<p class="fold-cohort">Live 30-day event: October 5th to November 9th<br><span>12 PM ET Mondays &amp; Thursdays</span><br class="event-mobile-break"><span class="event-desktop-divider" aria-hidden="true"> · </span><span>10 live sessions · Replays included</span></p>
 <p class="fold-audience">For people who still want to use their brains in the age of AI Slop...</p>
 <h1>Start Writing <em>Online</em> In 30 Days</h1>
 <p class="fold-format">Ship 30 for 30 is a cohort-based writing challenge.</p>
 <p class="fold-outcome">But unlike other writing “courses,” you will publish 30 pieces of writing in public, clarify your thinking, create your niche, build your digital brain, and make lifelong friends.</p>
-<p class="fold-dates"><strong>10 live sessions</strong><br>October 5th to November 9th · 12 PM ET<br>Replays included</p>
 <div class="fold-actions"><a class="cta" href="#section-14">Join 10,000+ other writers</a><a class="fold-secondary" href="#curriculum">See the curriculum ↓</a></div>
 </div>
 <aside class="hero-aside"><div class="portrait-pair"><figure><img src="/landing-assets/team/dickie-bush.png" alt="Dickie Bush"><figcaption>Dickie Bush</figcaption></figure><figure><img src="/landing-assets/team/nicolas-cole.png" alt="Nicolas Cole"><figcaption>Nicolas Cole</figcaption></figure></div><div class="fold-hosts"><p class="fold-names">With Dickie Bush &amp; Nicolas Cole</p><p class="fold-proof">15,000+ successful students!</p></div></aside>
@@ -357,7 +439,7 @@ h1,h2,h3,h4,p,li,a,strong,summary,small,span,
 <li><strong>Remix your content across platforms &amp; formats:</strong>  The same piece of writing can be compressed, expanded, copy/pasted, and remixed into different formats and types of media.</li>
 <li><strong>Hire a team of AI Agents to do the low-leverage work for you:</strong>  The larger your Digital Brain gets, and the more “approved language” you have to play with, the more you can just focus on writing net-new material (while the robots do everything else).</li>
 </ul>
-<p>🚨 CAUTION: IF YOU SKIP THE STEP OF WRITING YOURSELF, FIRST, YOU WILL END UP WITH A “DIGITAL BRAIN-LESS” PERSONAL BRAND! NO AI SLOP ALLOWED.</p></div><aside class="visual-slot" aria-label="Design placeholder"><span class="slot-label">VISUAL TO ADD</span><div class="slot-window"><span>+</span></div><strong>The distribution workflow</strong><p>Add a real workflow screenshot showing original writing being repurposed.</p></aside></div></section><h2 class="pillar-summary">These are the 3 pillars we’re using to execute our writing in 2026 - and we’re giving you the full playbook.</h2></div><section class="offer" id="offer"><div class="inner"><h2>Ready to <em>finally</em> start writing online?</h2><p class="offer-intro">everything that&#x27;s included...</p>
+<p>🚨 CAUTION: IF YOU SKIP THE STEP OF WRITING YOURSELF, FIRST, YOU WILL END UP WITH A “DIGITAL BRAIN-LESS” PERSONAL BRAND! NO AI SLOP ALLOWED.</p></div><aside class="visual-slot" aria-label="Design placeholder"><span class="slot-label">VISUAL TO ADD</span><div class="slot-window"><span>+</span></div><strong>The distribution workflow</strong><p>Add a real workflow screenshot showing original writing being repurposed.</p></aside></div></section><h2 class="pillar-summary">These are the 3 pillars we’re using to execute our writing in 2026 - and we’re giving you the full playbook.</h2></div><section class="offer" id="offer"><div class="inner"><h2>Everything that's included in Ship 30 for 30</h2>
 <ul>
 <li><div class="offer-copy">👋🏼 10 live sessions with Dickie &amp; Cole, where you won’t just learn passively. you will write and hit publish live!</div><aside class="visual-slot" aria-label="Design placeholder"><span class="slot-label">VISUAL TO ADD</span><div class="slot-window"><span>+</span></div><strong>Live sessions</strong><p>A real call screenshot</p></aside></li>
 <li><div class="offer-copy">🎥 30-day digital writing curriculum with examples, walkthroughs, bonuses resources, and more.</div><aside class="visual-slot" aria-label="Design placeholder"><span class="slot-label">VISUAL TO ADD</span><div class="slot-window"><span>+</span></div><strong>Curriculum</strong><p>A lesson-library screenshot</p></aside></li>
@@ -371,15 +453,15 @@ h1,h2,h3,h4,p,li,a,strong,summary,small,span,
 <p>This is our private community for people who want to write online, and then use AI to “scale themselves” and their original thinking.</p>
 <p>(This is not an AI-slop factory. We’re against that.)</p>
 <h3>As part of Ship 30 for 30, you also get access to:</h3>
-<article class="bonus-module"><div><h3>Bonus #1: AI Cole ($5,000+ Value!)</h3>
+<article class="bonus-module"><div><h3>Bonus #1: AI Cole ($5,000+ Value!)</h3><details class="bonus-description"><summary>Details</summary>
 <p>We have students from all over the world, across every time zone imaginable. So we built a custom AI model trained on our entire library of programs, curriculums, books, live sessions, and social content so students can get any question answered, instantly, 24/7.</p>
 <p>Students love AI Cole and use it all the time!</p>
 
-</div><aside class="visual-slot" aria-label="Design placeholder"><span class="slot-label">VISUAL TO ADD</span><div class="slot-window"><span>+</span></div><strong>AI Cole in action</strong><p>A real question and response from AI Cole.</p></aside></article><article class="bonus-module"><div><h3>Everything Included In AI Writing Skool</h3>
+</details></div><aside class="visual-slot" aria-label="Design placeholder"><span class="slot-label">VISUAL TO ADD</span><div class="slot-window"><span>+</span></div><strong>AI Cole in action</strong><p>A real question and response from AI Cole.</p></aside></article><article class="bonus-module"><div><h3>Everything Included In AI Writing Skool</h3><details class="bonus-description"><summary>Details</summary>
 <p>Inside our AI Writing Skool (which you get access to as part of Ship 30 for 30), you will have access to our entire vault of mini-courses.</p>
 <p>These are incredibly in-depth trainings on specific writing, building, and automation skills in the digital world.</p>
 
-</div><aside class="visual-slot" aria-label="Design placeholder"><span class="slot-label">VISUAL TO ADD</span><div class="slot-window"><span>+</span></div><strong>Inside the mini-course vault</strong><p>A screenshot showing the available courses.</p></aside></article><article class="bonus-module"><div><h3>Bonus #3: Free 30-Day Trial To Typeshare</h3>
+</details></div><aside class="visual-slot" aria-label="Design placeholder"><span class="slot-label">VISUAL TO ADD</span><div class="slot-window"><span>+</span></div><strong>Inside the mini-course vault</strong><p>A screenshot showing the available courses.</p></aside></article><article class="bonus-module"><div><h3>Bonus #3: Free 30-Day Trial To Typeshare</h3><details class="bonus-description"><summary>Details</summary>
 <p>Typeshare is our custom software platform, specifically designed to help writers take a data-driven approach to their writing.</p>
 <p>Inside Typeshare, you will:</p>
 <ul>
@@ -387,7 +469,7 @@ h1,h2,h3,h4,p,li,a,strong,summary,small,span,
 <li><strong>Track your analytics:</strong>  Connect your social accounts and measure the performance of everything you write.</li>
 <li><strong>Hire your AI Distribution Agents:</strong>  You do the writing. The robots do everything else!</li>
 </ul>
-<p>Typeshare is a paid platform. but as part of Ship 30 for 30, you’ll get access throughout the cohort for free.</p></div><aside class="visual-slot" aria-label="Design placeholder"><span class="slot-label">VISUAL TO ADD</span><div class="slot-window"><span>+</span></div><strong>Inside Typeshare</strong><p>A screenshot of the writing and publishing workspace.</p></aside></article></div></section><section class="calendar" id="curriculum"><div class="inner"><h2>The Ship 30 for 30 Calendar &amp; Curriculum</h2>
+<p>Typeshare is a paid platform. but as part of Ship 30 for 30, you’ll get access throughout the cohort for free.</p></details></div><aside class="visual-slot" aria-label="Design placeholder"><span class="slot-label">VISUAL TO ADD</span><div class="slot-window"><span>+</span></div><strong>Inside Typeshare</strong><p>A screenshot of the writing and publishing workspace.</p></aside></article></div></section><section class="calendar" id="curriculum"><div class="inner"><h2>The Ship 30 for 30 Calendar &amp; Curriculum</h2>
 <p>Ship 30 for 30 is a cohort-based writing challenge that lasts 30 days, and is held inside our AI Writing Skool.</p>
 <ul>
 <li><strong>Live sessions: 60 Minutes + 30 Minutes of Optional Breakout Rooms</strong> </li>
