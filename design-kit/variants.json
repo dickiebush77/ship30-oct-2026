@@ -1,0 +1,137 @@
+[
+  {
+    "n": "01",
+    "name": "Paper Original",
+    "bg": "#FAF9F6",
+    "accent": "#BD3151",
+    "font": "Georgia",
+    "file": "01-split.html",
+    "desc": "The closest to your reference. Warm paper, raspberry red, staggered portraits."
+  },
+  {
+    "n": "02",
+    "name": "Bookshop",
+    "bg": "#F7F5EF",
+    "accent": "#A44238",
+    "font": "Baskerville",
+    "file": "02-book.html",
+    "desc": "A little more literary. A wider serif headline and a tidy portrait column."
+  },
+  {
+    "n": "03",
+    "name": "Quiet Studio",
+    "bg": "#FAFAF7",
+    "accent": "#52634D",
+    "font": "Inter",
+    "file": "03-studio.html",
+    "desc": "Soft olive, confident sans-serif, generous space. A quieter modern studio."
+  },
+  {
+    "n": "04",
+    "name": "Sunday Edition",
+    "bg": "#FAF7F2",
+    "accent": "#AD493B",
+    "font": "Georgia",
+    "file": "04-center.html",
+    "desc": "A centered editorial opening, with the instructors brought into a horizontal footer."
+  },
+  {
+    "n": "05",
+    "name": "Rose Paper",
+    "bg": "#FBF7F7",
+    "accent": "#B34165",
+    "font": "Palatino",
+    "file": "05-reverse.html",
+    "desc": "A faint rose tint. Portraits lead on the left; a softer serif carries the headline."
+  },
+  {
+    "n": "06",
+    "name": "Ink & Oat",
+    "bg": "#F5F3EC",
+    "accent": "#3D5968",
+    "font": "Georgia",
+    "file": "06-rail.html",
+    "desc": "Blue-black ink with an oat background. A narrow editorial rail frames the hero."
+  },
+  {
+    "n": "07",
+    "name": "Modern Letter",
+    "bg": "#FAF9F5",
+    "accent": "#A64335",
+    "font": "Inter",
+    "file": "07-letter.html",
+    "desc": "A compact sans headline above a personal, letter-like composition."
+  },
+  {
+    "n": "08",
+    "name": "Plum Journal",
+    "bg": "#F9F7F5",
+    "accent": "#75516C",
+    "font": "Georgia",
+    "file": "08-journal.html",
+    "desc": "Muted plum accents and a large headline spanning the page, with content beneath."
+  },
+  {
+    "n": "09",
+    "name": "Warm Workshop",
+    "bg": "#F8F6F0",
+    "accent": "#82613D",
+    "font": "Palatino",
+    "file": "09-workshop.html",
+    "desc": "A touch of honey and a framed instructor panel. Practical with a little warmth."
+  },
+  {
+    "n": "10",
+    "name": "Fine Print",
+    "bg": "#FCFBF8",
+    "accent": "#35645B",
+    "font": "Georgia",
+    "file": "10-minimal.html",
+    "desc": "Almost-white paper, deep green and a typography-led hero with small portraits."
+  },
+  {
+    "n": "D1",
+    "name": "Charcoal Editorial",
+    "bg": "#20211F",
+    "accent": "#D79C9E",
+    "font": "Georgia",
+    "file": "d1.html",
+    "desc": "Charcoal and warm ivory. The original staggered portrait layout, with a dusty rose signal."
+  },
+  {
+    "n": "D2",
+    "name": "Espresso Edition",
+    "bg": "#28221F",
+    "accent": "#DCA889",
+    "font": "Georgia",
+    "file": "d2.html",
+    "desc": "A warm espresso canvas, centered serif headline and compact instructor portraits."
+  },
+  {
+    "n": "D3",
+    "name": "Midnight Letter",
+    "bg": "#1E2730",
+    "accent": "#9CBDBE",
+    "font": "Georgia",
+    "file": "d3.html",
+    "desc": "Muted midnight ink, pale teal and a narrow editorial rail. Cool without the old purple cast."
+  },
+  {
+    "n": "D4",
+    "name": "Plum After Hours",
+    "bg": "#292329",
+    "accent": "#D9A8BA",
+    "font": "Georgia",
+    "file": "d4.html",
+    "desc": "A subdued plum background and an oversized editorial headline spanning the page."
+  },
+  {
+    "n": "D5",
+    "name": "Forest Study",
+    "bg": "#202A26",
+    "accent": "#B9C7A1",
+    "font": "Georgia",
+    "file": "d5.html",
+    "desc": "Deep green, parchment type and a small portrait signature. Quiet and typography-led."
+  }
+]
